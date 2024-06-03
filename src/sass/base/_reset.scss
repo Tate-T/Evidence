@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    display: block;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    border: none;
+}
