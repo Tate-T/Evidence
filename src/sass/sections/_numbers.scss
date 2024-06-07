@@ -1,0 +1,41 @@
+.numbers {
+
+    &__title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 0.92;
+        color: $dark-accent-color;
+    }
+
+    &__subtitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 160px;
+
+
+    }
+
+    &__item:first-child &__subtitle {
+        color: #edbbd6;
+    }
+
+    &__item:nth-child(2) &__subtitle {
+        color: #72b7f2;
+    }
+
+    &__item:nth-child(3) &__subtitle {
+        color: #58d7d0;
+    }
+
+    &__item:last-child &__subtitle {
+        color: #facf4f;
+    }
+
+    &__desc {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: $dark-accent-color;
+    }
+}
