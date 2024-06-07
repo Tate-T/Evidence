@@ -48,7 +48,29 @@
         <h3 class="hero__subtitle">Вартість 400 грн</h3>
       </li>
     </ul>
-    <div class="hero__imgblock"><img src="" alt="" class="hero__img" /></div>
+    <div class="hero__imgblock">
+      <picture>
+        <source
+          srcset="//assets/hero-photo@1x-desktop-f2fea948.webp 1x, //assets/hero-photo@2x-desktop-f66afe42.webp 2x"
+          media="(min-width: 1766px)"
+        />
+        <source
+          srcset="//assets/hero-photo@1x-tablet-15364443.webp 1x, //assets/hero-photo@2x-tablet-cd46d06c.webp 2x"
+          media="(min-width: 1334px)"
+        />
+        <source
+          srcset="//assets/hero-photo@1x-mobile-4abdb238.webp 1x, //assets/hero-photo@2x-mobile-680f22f8.webp 2x"
+          media="(max-width: 1333px)"
+        />
+        <img
+          class="doctor__avatar"
+          width="240"
+          height="240"
+          src="../img/mobile/hero/doctor-photo@1x-mobile.webp 1x"
+          alt="Avatar"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
