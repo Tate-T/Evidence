@@ -3,27 +3,29 @@
     <div class="footer__addressblock">
       <ul class="footer__address">
         <li class="footer__address">
-          <svg class="footer__icon" width="60" height="60">
+          <svg class="footer__icon" width="40" height="40">
             <use href="../svg/icons.svg#footer-map"></use>
           </svg>
           <h3 class="footer__label">Адреса:</h3>
           <a
+            target="_blank"
             href="https://www.google.com.ua/maps/search/%D0%BC.%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%92%D1%96%D0%B4%D1%80%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F,+121/@49.8327706,23.9298347,17114m/data=!3m2!1e3!4b1?hl=uk&entry=ttu"
             class="footer__contact"
-            >м.Львів, проспект Відродження, 121</a
           >
+            м.Львів, проспект Відродження, 121
+          </a>
         </li>
         <li class="footer__address">
-          <svg class="footer__icon" width="60" height="60">
+          <svg class="footer__icon" width="40" height="40">
             <use href="../svg/icons.svg#footer-mail"></use>
           </svg>
           <h3 class="footer__label">Email:</h3>
-          <a href="mailto:evidence.ua@gmail.com" class="footer__contact"
-            >evidence.ua@gmail.com</a
-          >
+          <a href="mailto:evidence.ua@gmail.com" class="footer__contact">
+            evidence.ua@gmail.com
+          </a>
         </li>
         <li class="footer__address">
-          <svg class="footer__icon" width="60" height="60">
+          <svg class="footer__icon" width="40" height="40">
             <use href="../svg/icons.svg#footer-call"></use>
           </svg>
           <h3 class="footer__label">Телефон:</h3>
@@ -32,22 +34,22 @@
       </ul>
       <ul class="footer__medias">
         <li class="footer__media">
-          <a href="" class="footer__run">
-            <svg class="footer__program" width="60" height="60">
+          <a target="_blank" href="" class="footer__run">
+            <svg class="footer__program" width="40" height="40">
               <use href="../svg/icons.svg#footer-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer__media">
-          <a href="" class="footer__run">
-            <svg class="footer__program" width="60" height="60">
+          <a target="_blank" href="" class="footer__run">
+            <svg class="footer__program" width="40" height="40">
               <use href="../svg/icons.svg#footer-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__media">
-          <a href="" class="footer__run">
-            <svg class="footer__program" width="60" height="60">
+          <a target="_blank" href="" class="footer__run">
+            <svg class="footer__program" width="40" height="40">
               <use href="../svg/icons.svg#footer-google"></use>
             </svg>
           </a>
@@ -55,7 +57,36 @@
       </ul>
     </div>
     <div class="footer__content">
-      <img src="" alt="" class="footer__logo" />
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/header/logo@1x-desktop.webp 1x,
+            ./img/desktop/header/logo@2x-desktop.webp 2x
+          "
+          media="(min-width: 1766px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/header/logo@1x-tablet.webp 1x,
+            ./img/tablet/header/logo@1x-tablet.webp 2x
+          "
+          media="(min-width: 1334px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/header/logo@1x-mobile.webp 1x,
+            ./img/mobile/header/logo@1x-mobile.webp 2x
+          "
+          media="(max-width: 1333px)"
+        />
+        <img
+          class="doctor__avatar"
+          width="170"
+          height="50"
+          src="./img/mobile/header/logo@1x-mobile.webp 1x"
+          alt="logo"
+        />
+      </picture>
       <div class="footer__clinic">
         <h3 class="footer__header">Наша клініка</h3>
         <ul class="footer__advans">
