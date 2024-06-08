@@ -1,0 +1,46 @@
+.menu {
+    &__icon {
+        stroke-width: 1.50px;
+        stroke: #72b7f2;
+        fill: none;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        color: $text-color;
+
+        &--disabled {
+            color: $accent-bg-color;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 2.75;
+        color: #3a3b3d;
+    }
+
+    &__contact {
+        stroke-width: 1.50px;
+        stroke: $dark-accent-color;
+        fill: none;
+    }
+
+    &__subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.125;
+        color: $dark-accent-color;
+    }
+
+    &__info {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.375;
+        color: $text-color;
+    }
+}

@@ -1,7 +1,5 @@
 .search {
-
     &__title {
-        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 48px;
         line-height: 0.92;
@@ -9,7 +7,6 @@
     }
 
     &__num {
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 96px;
         line-height: 0.46;
@@ -17,21 +14,18 @@
     }
 
     &__small {
-        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 32px;
         color: #d1a4bc;
     }
 
     &__desc {
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 32px;
         color: $dark-accent-color;
     }
 
     &__btn {
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 32px;
         line-height: 1.38;
@@ -61,5 +55,4 @@
         width: 391px;
         height: 398px;
     }
-
 }

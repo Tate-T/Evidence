@@ -1,7 +1,6 @@
 .numbers {
 
     &__title {
-        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 48px;
         line-height: 0.92;
@@ -9,11 +8,8 @@
     }
 
     &__subtitle {
-        font-family: "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 160px;
-
-
     }
 
     &__item:first-child &__subtitle {
@@ -33,7 +29,6 @@
     }
 
     &__desc {
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 32px;
         color: $dark-accent-color;
