@@ -1,0 +1,65 @@
+.search {
+
+    &__title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 0.92;
+        color: $dark-accent-color;
+    }
+
+    &__num {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 0.46;
+        color: #d1a4bc;
+    }
+
+    &__small {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #d1a4bc;
+    }
+
+    &__desc {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: $dark-accent-color;
+    }
+
+    &__btn {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.38;
+        color: $additional-color;
+        background-color: $light-accent-color;
+        padding: 18px 208px;
+        border-radius: 50px;
+    }
+
+    &__photo:first-child &__img {
+        border: 2px solid $light-accent-color;
+        border-radius: 133px;
+        width: 270px;
+        height: 270px;
+    }
+
+    &__photo:nth-child(2) &__img {
+        border: 2px solid #fce296;
+        border-radius: 135px;
+        width: 266px;
+        height: 270px;
+    }
+
+    &__photo:last-child &__img {
+        border: 2px solid #f3dfea;
+        border-radius: 195px;
+        width: 391px;
+        height: 398px;
+    }
+
+}
