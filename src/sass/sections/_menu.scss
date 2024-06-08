@@ -1,4 +1,10 @@
 .menu {
+
+    &__search,
+    &__close {
+        background-color: transparent;
+    }
+
     &__icon {
         stroke-width: 1.50px;
         stroke: #72b7f2;
