@@ -19,11 +19,414 @@
     
     <title>Evidence</title>
     <script type="module" crossorigin src="//assets/menu-3cfb730f.js"></script>
-    <link rel="stylesheet" href="//assets/doctors-page-8fc5ee32.css">
+    <link rel="stylesheet" href="//assets/doctors-page-918e4dfb.css">
   </head>
   <body>
     
-    
+    <section class="doctors">
+  <div class="container">
+    <h2 class="doctors__title">Лікарі</h2>
+    <input
+      placeholder="Шукати ім’я, професію"
+      type="text"
+      class="doctors__input"
+    />
+    <ul class="doctors__ways">
+      <li class="doctors__way">
+        <a href="" class="doctors__addressing">Головна</a>
+      </li>
+      <li class="doctors__way">
+        <svg class="doctors__icon" width="20" height="20">
+          <use href="//assets/icons-8a8bb47d.svg#doctors-arrow"></use>
+        </svg>
+      </li>
+      <li class="doctors__way">
+        <a href="" class="doctors__addressing doctors__addressing--checked">Знайти лікаря</a>
+      </li>
+    </ul>
+    <ul class="doctors__profs">
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Всі лікарі</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Педіатри</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Хірург</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Кардіолог</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Невролог</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Гастроентеролог</a>
+      </li>
+      <li class="doctors__prof">
+        <a href="" class="doctors__link">Інфекціоніст</a>
+      </li>
+    </ul>
+    <ul class="doctors__list">
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo1@1x-mobile-084b53cf.webp 1x, //assets/doctors-photo1@2x-mobile-70e61416.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="data:image/webp;base64,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 1x, //assets/doctors-photo1@2x-tablet-5a1f5fbe.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="//assets/doctors-photo1@1x-mobile-084b53cf.webp 1x, //assets/doctors-photo1@2x-mobile-70e61416.webp 2x"
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo1@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Ткачук Олег Миколайович</h3>
+            <p class="doctors__desc">Кардіолог</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo2@1x-mobile-4c36f89a.webp 1x, //assets/doctors-photo2@2x-mobile-7fcf9367.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo2@1x-tablet-cdcb4fa2.webp 1x, //assets/doctors-photo2@2x-tablet-d3630691.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="//assets/doctors-photo2@1x-mobile-4c36f89a.webp 1x, //assets/doctors-photo2@2x-mobile-7fcf9367.webp 2x"
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo2@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Демчишин Ярослав Павлович</h3>
+            <p class="doctors__desc">Інфекціоніст</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo3@1x-mobile-c7971fa5.webp 1x, //assets/doctors-photo3@2x-mobile-548a015b.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo3@1x-tablet-bed8c541.webp 1x, //assets/doctors-photo3@2x-tablet-bdeca61c.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="//assets/doctors-photo3@1x-mobile-c7971fa5.webp 1x, //assets/doctors-photo3@2x-mobile-548a015b.webp 2x"
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo3@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Тригуб Анна Вадимівна</h3>
+            <p class="doctors__desc">Педіатр</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo4@1x-mobile-fd01ba43.webp 1x, //assets/doctors-photo4@2x-mobile-0345e9aa.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="data:image/webp;base64,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 1x, //assets/doctors-photo4@2x-tablet-748a96be.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="//assets/doctors-photo4@1x-mobile-fd01ba43.webp 1x, //assets/doctors-photo4@2x-mobile-0345e9aa.webp 2x"
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo4@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Дронь Алла Сергіївна</h3>
+            <p class="doctors__desc">Невролог</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo5@1x-desktop-9090bbc9.webp 1x, //assets/doctors-photo5@2x-desktop-7d3005b9.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo5@1x-tablet-dc2d9273.webp 1x, //assets/doctors-photo5@2x-tablet-33d86491.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo5@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo5@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo5@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Пархомчук Альона Василівна</h3>
+            <p class="doctors__desc">Педіатр</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo6@1x-desktop-e00f8027.webp 1x, //assets/doctors-photo6@2x-desktop-bbec0c43.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo6@1x-tablet-0864363d.webp 1x, //assets/doctors-photo6@2x-tablet-41474fba.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo6@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo6@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo6@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Білошицька Анна Олександрівна</h3>
+            <p class="doctors__desc">Консультант з грудного вигодовування</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo7@1x-desktop-6f5fbd99.webp 1x, //assets/doctors-photo7@2x-desktop-52410577.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo7@1x-tablet-839d3377.webp 1x, //assets/doctors-photo7@2x-tablet-05f94a48.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo7@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo7@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo7@1x-mobile.webp 1x"
+              />
+            </picture>
+            </picture>
+            <h3 class="doctors__subtitle">Шевчук Ірина Михайлівна</h3>
+            <p class="doctors__desc">Дитяча лікарка УЗД</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo8@1x-desktop-c80ed56c.webp 1x, //assets/doctors-photo8@2x-desktop-60ff98c5.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="data:image/webp;base64,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 1x, //assets/doctors-photo8@2x-tablet-e53046d7.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo8@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo8@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo8@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Ткачук Олег Миколайович</h3>
+            <p class="doctors__desc">Кардіолог</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo9@1x-desktop-bdf95f10.webp 1x, //assets/doctors-photo9@2x-desktop-140262ae.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="data:image/webp;base64,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 1x, //assets/doctors-photo9@2x-tablet-87f3030a.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo9@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo9@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo9@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Маліновський Дмтро Сергійович</h3>
+            <p class="doctors__desc">Вертерболог</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo10@1x-desktop-4c5d84a5.webp 1x, //assets/doctors-photo10@2x-desktop-3fcc8d5c.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo10@1x-tablet-81335eab.webp 1x, //assets/doctors-photo10@2x-tablet-d56e78a0.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo10@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo10@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo10@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Вовк Анатолій Вікторович</h3>
+            <p class="doctors__desc">Лікар УЗД</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo11@1x-desktop-ee892ab5.webp 1x, //assets/doctors-photo11@2x-desktop-dc802f56.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="//assets/doctors-photo11@1x-tablet-e784e4fb.webp 1x, //assets/doctors-photo11@2x-tablet-fd4ae376.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo11@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo11@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo11@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Янощук Ольга Василівна</h3>
+            <p class="doctors__desc">Педіатр</p>
+          </article>
+        </button>
+      </li>
+      <li class="doctors__item">
+        <button class="doctors__btn">
+          <article class="doctors__article">
+            <picture>
+              <source
+                srcset="//assets/doctors-photo12@1x-desktop-29ad37e3.webp 1x, //assets/doctors-photo12@2x-desktop-ca743aa3.webp 2x"
+                media="(min-width: 1766px)"
+              />
+              <source
+                srcset="data:image/webp;base64,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 1x, //assets/doctors-photo12@2x-tablet-5f17d393.webp 2x"
+                media="(min-width: 1334px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/doctors/doctors-photo12@1x-mobile.webp 1x,
+                  ./img/mobile/doctors/doctors-photo12@2x-mobile.webp 2x
+                "
+                media="(max-width: 1333px)"
+              />
+              <img
+                class="doctors__photo"
+                alt=""
+                src="./img/mobile/doctors/doctors-photo12@1x-mobile.webp 1x"
+              />
+            </picture>
+            <h3 class="doctors__subtitle">Ямкова Ольга Олександрівна</h3>
+            <p class="doctors__desc">Гастроентеролог</p>
+          </article>
+        </button>
+      </li>
+    </ul>
+    <button class="doctors__more">
+      Дивитись ще
+      <svg class="doctors__reload" width="20" height="20">
+        <use href=""></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
     
     <footer class="footer">
   <div class="container">
