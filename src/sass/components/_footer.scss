@@ -1,0 +1,212 @@
+.footer {
+    &__addressblock {}
+
+    &__address {}
+
+    &__icon {
+        fill: none;
+        stroke: $dark-accent-color;
+    }
+
+    &__label {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+    }
+
+    &__contact {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.38;
+    }
+
+    &__medias {}
+
+    &__media {}
+
+    &__run {}
+
+    &__program {
+        fill: none;
+        stroke: $dark-accent-color;
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__logo {}
+
+    &__clinic {}
+
+    &__header {}
+
+    &__advans {}
+
+    &__advan {}
+
+    &__lists {}
+
+    &__items {}
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+}
+
+@media screen and (min-width: 1334px) {
+    .footer {
+
+        &__addressblock {}
+
+        &__address {}
+
+        &__icon {
+            width: 43px;
+            height: 43px;
+        }
+
+        &__label {
+            font-family: "Open Sans";
+            font-size: 11.383px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        &__contact {
+            font-size: 11.383px;
+            line-height: 1.5;
+        }
+
+        &__medias {}
+
+        &__media {}
+
+        &__run {}
+
+        &__program {
+            width: 43px;
+            height: 43px;
+        }
+
+        &__content {
+            display: block;
+        }
+
+        &__logo {}
+
+        &__clinic {}
+
+        &__header {
+            color: $dark-accent-color;
+            font-size: 11.383px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &__advans {}
+
+        &__advan {
+            color: $text-color;
+            font-size: 11.383px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        &__lists {}
+
+        &__items {}
+
+        &__subtitle {
+            color: $dark-accent-color;
+            font-size: 11.383px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        &__list {}
+
+        &__item {}
+
+        &__link {
+            color: $dark-accent-color;
+            font-size: 11.383px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (min-width: 1766px) {
+    .footer {
+
+        &__addressblock {}
+
+        &__address {}
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__label {
+            font-size: 16px;
+        }
+
+        &__contact {
+            font-size: 16px;
+        }
+
+        &__medias {}
+
+        &__media {}
+
+        &__run {}
+
+        &__program {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__content {
+            display: block;
+        }
+
+        &__logo {}
+
+        &__clinic {}
+
+        &__header {
+            font-size: 16px;
+        }
+
+        &__advans {}
+
+        &__advan {
+            font-size: 16px;
+        }
+
+        &__lists {}
+
+        &__items {}
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__list {}
+
+        &__item {}
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
