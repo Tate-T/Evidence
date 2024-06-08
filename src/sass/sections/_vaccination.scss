@@ -1,0 +1,60 @@
+.vaccination {
+    &__close {
+        background-color: transparent;
+    }
+
+    &__dagger {
+        fill: none;
+        stroke: $dark-accent-color;
+    }
+
+    &__wrapper {}
+
+    &__title {
+        color: $dark-accent-color;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.38;
+    }
+
+    &__content {}
+
+    &__header {}
+
+    &__subtitle {
+        color: $dark-accent-color;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.83;
+    }
+
+    &__list {}
+
+    &__item {}
+
+    &__icon {
+        fill: none;
+        stroke: #000;
+    }
+
+    &__name {
+        color: $text-color;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__cost {
+        color: $dark-accent-color;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 2.2;
+    }
+}
+
+@media screen and (min-width: 1334px) {
+    .vaccination {}
+}
+
+@media screen and (min-width: 1766px) {
+    .vaccination {}
+}
