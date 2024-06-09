@@ -1,10 +1,45 @@
 .numbers {
+    padding: 100px 0 61px;
 
     &__title {
         font-weight: 600;
         font-size: 48px;
         line-height: 0.92;
         color: $dark-accent-color;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 859px;
+
+        &:first-child {
+            padding: 69px 100px 69px 260px;
+            background-color: #F3DFEA;
+            border-radius: 50px 0 0 0;
+        }
+
+        &:nth-child(2) {
+            padding: 76px 489px 76px 100px;
+            background-color: #D0E1F1;
+            border-radius: 0 50px 0 0;
+        }
+
+        &:nth-child(3) {
+            padding: 76px 189px 76px 260px;
+            background-color: #CEF2F0;
+            border-radius: 0 0 0 50px;
+        }
+
+        &:last-child {
+            padding: 76px 252px 76px 100px;
+            background-color: #FCE296;
+            border-radius: 0 0 50px 0;
+        }
     }
 
     &__subtitle {
