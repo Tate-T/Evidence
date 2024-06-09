@@ -1,0 +1,120 @@
+.record {
+
+    &__arrow {
+        fill: $dark-accent-color;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        color: $text-color;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        color: $dark-accent-color;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 24px;
+        color: #7b7b7b;
+    }
+
+    &__edit {
+        fill: none;
+        stroke: $dark-accent-color;
+        stroke-width: 1.50px;
+    }
+
+    &__map {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.33;
+        color: $text-color;
+    }
+
+    &__num {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border: 1px solid $dark-accent-color;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        color: $text-color;
+
+        &--disabled {
+            font-weight: 400;
+            color: #8f8f8f;
+        }
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.33;
+        color: $text-color;
+    }
+
+    &__regulator {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        color: $text-color;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        color: $text-color;
+    }
+
+    &__input {
+        padding: 13px 16px;
+        border: 1px solid $dark-accent-color;
+        border-radius: 50px;
+        width: 500px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.33;
+            color: $form-color;
+        }
+    }
+
+    &__btn {
+        font-weight: 600;
+        font-size: 20px;
+        color: $additional-color;
+        background-color: $light-accent-color;
+        padding: 12px 228px;
+        border-radius: 50px;
+    }
+
+    &__regist {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+        color: #1f140f;
+    }
+
+    &__icon {
+        stroke-width: 1.50px;
+        stroke: $dark-accent-color;
+        fill: none;
+    }
+}
