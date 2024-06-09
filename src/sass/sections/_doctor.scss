@@ -1,0 +1,371 @@
+.doctor {
+    &__close {
+        background-color: transparent;
+        line-height: 0;
+    }
+
+    &__dagger {
+        fill: none;
+        stroke: $dark-accent-color;
+    }
+
+    &__person {}
+
+    &__avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    &__record {}
+
+    &__name {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+    }
+
+    &__characters {}
+
+    &__character {}
+
+    &__header {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.38;
+    }
+
+    &__info {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.38;
+    }
+
+    &__btn {
+        color: $additional-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+        padding: 14px 71.5px;
+        border-radius: 20px;
+        background: $light-accent-color;
+    }
+
+    &__wrapper {}
+
+    &__activity {}
+
+    &__subtitle {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.38;
+    }
+
+    &__descs {}
+
+    &__desc {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.38;
+    }
+
+    &__read {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+        text-decoration-line: underline;
+    }
+
+    &__address {}
+
+    &__caption {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+    }
+
+    &__works {}
+
+    &__work {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.38;
+    }
+
+    &__reviews {}
+
+    &__title {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+    }
+
+    &__list {}
+
+    &__item {
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        border: 0.413px solid $dark-accent-color;
+        border-radius: 50%;
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 13.201px;
+        font-weight: 400;
+        padding: 15px 16px 16px 33px;
+        width: 280px;
+        border: 0.41px solid $light-accent-color;
+        border-radius: 20.627px;
+        background: #F2F3F5;
+    }
+}
+
+@media screen and (min-width: 1334px) {
+    .doctor {
+        &__close {}
+
+        &__dagger {
+            width: 32px;
+            height: 32px;
+        }
+
+        &__person {}
+
+        &__avatar {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__record {}
+
+        &__name {
+            font-family: "Open Sans";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.14;
+        }
+
+        &__characters {}
+
+        &__character {}
+
+        &__header {
+            font-size: 15.625px;
+            font-weight: 400;
+            line-height: 2.2;
+        }
+
+        &__info {
+            font-size: 15.625px;
+            line-height: normal;
+        }
+
+        &__btn {
+            padding: 11.5px 119px;
+            border-radius: 40px;
+            font-family: "Open Sans";
+            font-size: 15.625px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        &__wrapper {}
+
+        &__activity {}
+
+        &__subtitle {
+            font-size: 18.75px;
+            font-weight: 400;
+            line-height: 1.83;
+        }
+
+        &__descs {}
+
+        &__desc {
+            font-size: 15.625px;
+            line-height: normal;
+        }
+
+        &__read {
+            font-family: "Open Sans";
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        &__address {}
+
+        &__caption {
+            font-family: "Open Sans";
+            font-size: 18.75px;
+            font-weight: 600;
+            line-height: 1.83;
+        }
+
+        &__works {}
+
+        &__work {
+            font-size: 15.625px;
+            line-height: normal;
+        }
+
+        &__reviews {}
+
+        &__title {
+            font-family: "Open Sans";
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 1.38;
+        }
+
+        &__list {}
+
+        &__item {
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: block;
+            }
+        }
+
+        &__img {
+            width: 100px;
+            height: 100px;
+            border: 0.556px solid $dark-accent-color;
+        }
+
+        &__text {
+            padding: 22px 16px 23px 38px;
+            width: 374px;
+            border: 1px solid $light-accent-color;
+            border-radius: 20.627px;
+            background: #F2F3F5;
+            font-size: 17.786px;
+        }
+    }
+}
+
+@media screen and (min-width: 1766px) {
+    .doctor {
+        &__close {}
+
+        &__dagger {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__person {}
+
+        &__avatar {
+            width: 240px;
+            height: 240px;
+        }
+
+        &__record {}
+
+        &__name {
+            font-size: 32px;
+            line-height: 1.38;
+        }
+
+        &__characters {}
+
+        &__character {}
+
+        &__header {
+            font-size: 20px;
+        }
+
+        &__info {
+            font-size: 20px;
+        }
+
+        &__btn {
+            padding: 4px 118.5px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.83;
+        }
+
+        &__wrapper {}
+
+        &__activity {}
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__descs {}
+
+        &__desc {
+            font-size: 20px;
+        }
+
+        &__read {
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration-line: underline;
+        }
+
+        &__address {}
+
+        &__caption {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &__works {}
+
+        &__work {
+            font-size: 20px;
+        }
+
+        &__reviews {}
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__list {}
+
+        &__item {}
+
+        &__img {
+            width: 134px;
+            height: 134px;
+            border: 0.733px solid $dark-accent-color;
+        }
+
+        &__text {
+            padding: 27px 28px 29px 57px;
+            width: 484px;
+            border: 0.71px solid $light-accent-color;
+            border-radius: 20.627px;
+            background: #F2F3F5;
+            font-size: 22.767px;
+        }
+    }
+}
