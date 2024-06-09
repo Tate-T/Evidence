@@ -1,4 +1,12 @@
 .faq {
+    padding-bottom: 24px;
+    padding-top: 26px;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__title {
         color: $dark-accent-color;
@@ -6,13 +14,14 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 1.13;
+        margin-bottom: 20px;
     }
 
-    &__sidebar {}
-
-    &__squads {}
-
-    &__squad {}
+    &__squads {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 
     &__subtitle {
         color: $text-color;
@@ -35,34 +44,39 @@
     &__content {
         display: none;
     }
-
-    &__list {}
-
-    &__item {}
-
-    &__question {}
-
-    &__plus {}
-
-    &__icon {}
 }
 
 @media screen and (min-width: 1334px) {
     .faq {
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        & .container {
+            align-items: start;
+        }
+
         &__title {
             font-family: "Open Sans";
             font-size: 34.15px;
             font-weight: 600;
             line-height: 0.92;
+            margin-bottom: 24px;
         }
 
         &__sidebar {
             border-radius: 50px;
             background: #F3DCDC;
+            padding-top: 40px;
+            padding-left: 40px;
+            width: 319px;
+            height: 1043px;
+            position: relative;
         }
 
 
-        &__squads {}
+        &__squads {
+            gap: 40px;
+        }
 
         &__squad {}
 
@@ -74,15 +88,30 @@
 
         &__bubles {
             display: block;
+            position: absolute;
+            bottom: 16px;
+            right: 6px;
+            width: 309px;
+            height: 665px;
         }
 
         &__content {
             display: block;
+            padding-top: 40px;
+            width: 748px;
+            padding-right: 100px;
         }
 
         &__list {}
 
-        &__item {}
+        &__item {
+            padding: 24px;
+            height: 79px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.711px solid $light-accent-color;
+        }
 
         &__question {
             color: $dark-accent-color;
@@ -102,13 +131,46 @@
 
 @media screen and (min-width: 1766px) {
     .faq {
+        padding-top: 24px;
+        padding-bottom: 93px;
+
+        &__sidebar {
+            padding-top: 56px;
+            padding-left: 56px;
+            width: 449px;
+            height: 1466px;
+        }
+
+        &__squads {
+            gap: 56px;
+        }
 
         &__title {
             font-size: 48px;
+            margin-bottom: 74px;
         }
 
         &__subtitle {
             font-size: 32px;
+        }
+
+        &__bubles {
+            bottom: 58px;
+            right: 10px;
+            width: 430px;
+            height: 934px;
+        }
+
+        &__content {
+            padding-top: 94px;
+            width: 1053px;
+            padding-right: 94px;
+        }
+
+        &__item {
+            padding: 32px;
+            height: 109px;
+            border-bottom: 1px solid $light-accent-color;
         }
 
         &__question {
@@ -118,6 +180,26 @@
         &__plus {
             width: 22px;
             height: 22px;
+        }
+
+        .faq {
+
+            &__list {}
+
+
+            &__question {
+                color: $dark-accent-color;
+                font-size: 22.767px;
+                font-weight: 600;
+            }
+
+            &__plus {
+                fill: #0052B4;
+            }
+
+            &__icon {
+                display: none;
+            }
         }
     }
 }
