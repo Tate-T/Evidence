@@ -1,6 +1,19 @@
 .vaccination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1303px;
+    height: 1048px;
+    overflow: hidden;
+    background: $background-color;
+    padding: 69px 67px;
+
     &__close {
         background-color: transparent;
+        position: absolute;
+        top: 40px;
+        right: 24px;
     }
 
     &__dagger {
@@ -8,18 +21,35 @@
         stroke: $dark-accent-color;
     }
 
-    &__wrapper {}
+    &__wrapper {
+        border-radius: 50px;
+        border: 1px solid var(--blue-blue, #72B7F2);
+        padding: 28px 40px;
+    }
 
     &__title {
         color: $dark-accent-color;
         font-size: 32px;
         font-weight: 600;
         line-height: 1.38;
+        margin-bottom: 24px;
+        text-align: center;
     }
 
-    &__content {}
+    &__content {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 786px;
+        scrollbar-width: thin;
+        scrollbar-color: #D0E1F1 #72B7F2;
+    }
 
-    &__header {}
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 89px 14px 116px;
+        background: $accent-bg-color;
+    }
 
     &__subtitle {
         color: $dark-accent-color;
@@ -30,7 +60,12 @@
 
     &__list {}
 
-    &__item {}
+    &__item {
+        border-bottom: 14px solid $additional-color;
+        display: flex;
+        padding: 8px 103px 14px 24px;
+        align-items: center;
+    }
 
     &__icon {
         fill: none;
@@ -41,13 +76,15 @@
         color: $text-color;
         font-size: 24px;
         font-weight: 400;
+        margin-left: 56px;
+        margin-right: auto;
     }
 
     &__cost {
         color: $dark-accent-color;
         font-size: 20px;
         font-weight: 700;
-        line-height: 2.2;
+        line-height: 1.2;
     }
 }
 
