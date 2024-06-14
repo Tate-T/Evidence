@@ -1,11 +1,28 @@
 .footer {
-    &__addressblock {}
+    &__addressblock {
+        border-top: 1px solid $light-accent-color;
+    }
 
-    &__address {}
+    &__addresses {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__address {
+        display: flex;
+        gap: 16px;
+    }
 
     &__icon {
         fill: none;
         stroke: $dark-accent-color;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
     &__label {
@@ -23,7 +40,12 @@
         line-height: 1.38;
     }
 
-    &__medias {}
+    &__medias {
+        margin-top: 16px;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
 
     &__media {}
 
