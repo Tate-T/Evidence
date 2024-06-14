@@ -3,12 +3,17 @@
     background: $background-color;
     width: 390px;
     height: 293px;
+    padding: 66px 24px 37px;
+    position: relative;
 
     &__form {}
 
     &__close {
         background-color: transparent;
         line-height: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
     &__icon {
@@ -26,6 +31,8 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.38;
+        text-align: center;
+        margin-bottom: 14px;
     }
 
     &__input {
@@ -52,7 +59,13 @@
         font-weight: 700;
         line-height: 1.13;
         border-radius: 50px;
-        background: $light-accent-color;
+        background-color: $light-accent-color;
+        margin-top: 16px;
+
+        &__btn:hover,
+        &__btn:focus {
+            background-color: $dark-accent-color;
+        }
     }
 
     &__time {
@@ -60,6 +73,8 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.38;
+        margin-top: 24px;
+        text-align: center;
     }
 
     &__minutes {
