@@ -65,29 +65,31 @@
       </ul>
     </div>
     <div class="footer__content">
-      <picture>
-        <source
-          srcset="
-            ./img/desktop/header/logo@1x-desktop.webp 1x,
-            ./img/desktop/header/logo@2x-desktop.webp 2x
-          "
-          media="(min-width: 1766px)"
-        />
-        <source
-          srcset="
-            ./img/tablet/header/logo@1x-tablet.webp 1x,
-            ./img/tablet/header/logo@1x-tablet.webp 2x
-          "
-          media="(max-width: 1765px)"
-        />
-        <img
-          class="footer__logo"
-          width="170"
-          height="50"
-          src="./img/tablet/header/logo@1x-tablet.webp 1x"
-          alt="logo"
-        />
-      </picture>
+      <div class="footer__img">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/header/logo@1x-desktop.webp 1x,
+              ./img/desktop/header/logo@2x-desktop.webp 2x
+            "
+            media="(min-width: 1766px)"
+          />
+          <source
+            srcset="
+              ./img/tablet/header/logo@1x-tablet.webp 1x,
+              ./img/tablet/header/logo@1x-tablet.webp 2x
+            "
+            media="(max-width: 1765px)"
+          />
+          <img
+            class="footer__logo"
+            width="170"
+            height="50"
+            src="./img/tablet/header/logo@1x-tablet.webp 1x"
+            alt="logo"
+          />
+        </picture>
+      </div>
       <div class="footer__clinic">
         <h3 class="footer__header">Наша клініка</h3>
         <ul class="footer__advans">
