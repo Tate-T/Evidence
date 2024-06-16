@@ -1,13 +1,39 @@
 .menu {
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 22px;
+    }
+
     &__search,
     &__close {
         background-color: transparent;
     }
 
+    &__settings {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+        border-bottom: 1px solid $light-accent-color;
+        border-top: 1px solid $light-accent-color;
+    }
+
+    &__setting {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
     &__icon {
         stroke-width: 1.50px;
-        stroke: #72b7f2;
+        stroke: $light-accent-color;
         fill: none;
     }
 
@@ -21,11 +47,33 @@
         }
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 22px 0;
+    }
+
     &__link {
         font-weight: 400;
         font-size: 16px;
         line-height: 2.75;
         color: #3a3b3d;
+        border-bottom: 1px solid $accent-bg-color;
+        width: 100%;
+        display: block;
+    }
+
+    &__adresses {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__adress {
+        display: flex;
+        gap: 16px;
+        align-items: center;
     }
 
     &__contact {
@@ -40,6 +88,7 @@
         font-size: 16px;
         line-height: 1.125;
         color: $dark-accent-color;
+        margin-bottom: 8px;
     }
 
     &__info {
@@ -48,5 +97,13 @@
         font-size: 16px;
         line-height: 1.375;
         color: $text-color;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
     }
 }
