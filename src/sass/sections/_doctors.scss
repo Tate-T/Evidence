@@ -1,4 +1,11 @@
 .doctors {
+    padding-bottom: 53px;
+
+    &__cont {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
 
     &__title {
         font-family: "Open Sans", sans-serif;
@@ -6,6 +13,7 @@
         font-size: 40px;
         line-height: 1.1;
         color: $dark-accent-color;
+        margin-top: 16px;
     }
 
     &__input {
@@ -28,6 +36,24 @@
         }
     }
 
+    &__ways {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__way {
+        display: flex;
+        align-items: center;
+    }
+
+    &__profs {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 57px;
+    }
+
     &__addressing {
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
@@ -44,11 +70,6 @@
         stroke: $dark-accent-color;
     }
 
-    &__profs {
-        display: flex;
-        gap: 10px;
-    }
-
     &__link {
         position: relative;
         font-family: "Open Sans", sans-serif;
@@ -56,6 +77,27 @@
         font-size: 32px;
         line-height: 1.38;
         color: $dark-accent-color;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 67px;
+        margin-bottom: 49px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 1736px;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
     }
 
     &__btn {
@@ -80,5 +122,27 @@
         font-weight: 400;
         font-size: 24px;
         color: $text-color;
+
+        &--small {
+            font-size: 22px;
+        }
+    }
+
+    &__more {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.36;
+        color: $dark-accent-color;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__reload {
+        fill: none;
+        stroke: $dark-accent-color;
+        stroke-width: 1.5px;
     }
 }
