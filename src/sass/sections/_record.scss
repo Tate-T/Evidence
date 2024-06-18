@@ -1,4 +1,13 @@
 .record {
+    position: relative;
+
+    padding: 48px 56px;
+
+    &__way {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
 
     &__arrow {
         fill: $dark-accent-color;
@@ -14,12 +23,40 @@
         font-weight: 700;
         font-size: 24px;
         color: $dark-accent-color;
+        margin-left: 20px;
+        margin-top: 28px;
     }
 
     &__info {
         font-weight: 400;
         font-size: 24px;
         color: #7b7b7b;
+        margin-left: 20px;
+        margin-top: 8px;
+        margin-bottom: 38px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 21px;
+    }
+
+    &__item {
+
+        &::before {
+            content: "";
+
+        }
+
+        &:first-child,
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 56px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 22px;
+        }
     }
 
     &__edit {
@@ -61,11 +98,25 @@
         }
     }
 
+    &__dates {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 20px 0 20px 45px;
+    }
+
     &__date {
         font-weight: 400;
         font-size: 18px;
         line-height: 1.33;
         color: $text-color;
+
+    }
+
+    &__regulators {
+        display: flex;
+        gap: 56px;
+        margin-left: 45px;
     }
 
     &__regulator {
@@ -75,11 +126,23 @@
         color: $text-color;
     }
 
+    &__form {
+        margin: 0 auto;
+        width: 500px;
+    }
+
     &__label {
         font-weight: 600;
         font-size: 18px;
         line-height: 1.33;
         color: $text-color;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &:first-child {
+            margin-bottom: 16px;
+        }
     }
 
     &__input {
@@ -103,6 +166,13 @@
         background-color: $light-accent-color;
         padding: 12px 228px;
         border-radius: 50px;
+        margin-top: 24px;
+        margin-bottom: 22px;
+    }
+
+    &__registes {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__regist {
@@ -110,6 +180,12 @@
         font-size: 18px;
         line-height: 1.3;
         color: #1f140f;
+    }
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 24px;
     }
 
     &__icon {
