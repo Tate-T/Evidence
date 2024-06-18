@@ -10,28 +10,38 @@
     <p class="record__info">Лікар інфекціоніст</p>
     <ul class="record__list">
       <li class="record__item">
-        <svg class="record__edit" width="24" height="24">
-          <use href="../svg/icons.svg#record-edit"></use>
-        </svg>
-        <p class="record__map">м.Львів, проспект Відродження, 121</p>
+        <div class="record__wrapper">
+          <svg class="record__edit" width="24" height="24">
+            <use href="../svg/icons.svg#record-edit"></use>
+          </svg>
+          <p class="record__map">м.Львів, проспект Відродження, 121</p>
+        </div>
       </li>
       <li class="record__item">
-        <p class="record__num">2</p>
-        <p class="record__subtitle">Оберіть дату</p>
-        <p class="record__date">15.12.2022</p>
-        <p class="record__date">19.12.2022</p>
+        <div class="record__wrapper">
+          <p class="record__num">2</p>
+          <p class="record__subtitle">Оберіть дату</p>
+        </div>
+        <div class="record__dates">
+          <p class="record__date">15.12.2022</p>
+          <p class="record__date">19.12.2022</p>
+        </div>
         <div class="record__regulators">
           <p class="record__regulator">Назад</p>
           <p class="record__regulator">Далі</p>
         </div>
       </li>
       <li class="record__item">
-        <p class="record__num">3</p>
-        <p class="record__subtitle--disabled">Оберіть час</p>
+        <div class="record__wrapper">
+          <p class="record__num">3</p>
+          <p class="record__subtitle record__subtitle--disabled">Оберіть час</p>
+        </div>
       </li>
       <li class="record__item">
-        <p class="record__num">4</p>
-        <p class="record__subtitle">Авторизація</p>
+        <div class="record__wrapper">
+          <p class="record__num">4</p>
+          <p class="record__subtitle">Авторизація</p>
+        </div>
         <form class="record__form" action="">
           <label class="record__label" for="">
             Персональний номер :
@@ -57,8 +67,10 @@
         </form>
       </li>
       <li class="record__item">
-        <p class="record__num">5</p>
-        <p class="record__subtitle--disabled">Підтвердити</p>
+        <div class="record__wrapper">
+          <p class="record__num">5</p>
+          <p class="record__subtitle record__subtitle--disabled">Підтвердити</p>
+        </div>
       </li>
     </ul>
     <button class="record__close">
