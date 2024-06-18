@@ -1,0 +1,51 @@
+.header {
+    padding-top: 12px;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {}
+
+    &__menu {
+        stroke: $light-accent-color;
+    }
+
+    &__logo {}
+
+    &__img {
+        width: 186px;
+        height: 48px;
+    }
+
+    &__search {
+        stroke: $light-accent-color;
+        fill: none;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__item {}
+
+    &__link {
+        &--active {}
+    }
+
+    &__wrapper {
+        display: none;
+    }
+
+    &__user {}
+
+    &__states {
+        display: none;
+    }
+
+    &__state {}
+
+    &__run {}
+}
