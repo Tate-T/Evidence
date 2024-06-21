@@ -32,7 +32,7 @@
     background-color: $background-color;
     width: 390px;
     transform: translate(-50%, -50%);
-    padding: 12px 14px 75px;
+    padding: 12px 14px 105px;
 
     &__close {
         background-color: transparent;
@@ -52,7 +52,9 @@
         }
     }
 
-    &__person {}
+    &__person {
+        margin-bottom: 20px;
+    }
 
     &__avatar {
         width: 150px;
@@ -79,11 +81,13 @@
         gap: 10px;
         padding-left: 8px;
         margin-bottom: 24px;
+
     }
 
     &__character {
         display: flex;
         gap: 18px;
+        align-items: center;
     }
 
     &__header {
@@ -109,7 +113,6 @@
         padding: 14px 71.5px;
         border-radius: 20px;
         background: $light-accent-color;
-        margin-bottom: 20px;
 
         &:hover,
         &:focus {
@@ -218,8 +221,6 @@
     }
 
     &__text {
-        $text-height: 124px;
-        $img-height: 80px;
         color: $text-color;
         font-size: 13.201px;
         font-weight: 400;
@@ -229,7 +230,7 @@
         border-radius: 20.627px;
         background: #F2F3F5;
         position: absolute;
-        top: calc((($text-height - $img-height) / 2) - ($text-height - $img-height));
+        top: -30px;
         left: 61px;
         z-index: -1;
     }
@@ -237,18 +238,29 @@
 
 @media screen and (min-width: 1334px) {
     .doctor {
-        &__close {}
+        padding: 40px;
+        padding-bottom: 96px;
+        width: 800px;
+
+        &__close {
+            top: 24px;
+        }
 
         &__dagger {
             width: 32px;
             height: 32px;
         }
 
-        &__person {}
+        &__person {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+            margin-bottom: 64px;
+        }
 
         &__avatar {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
         }
 
         &__record {}
@@ -259,11 +271,17 @@
             font-style: normal;
             font-weight: 400;
             line-height: 1.14;
+            margin-bottom: 8px;
         }
 
-        &__characters {}
+        &__characters {
+            gap: 8px;
+            margin-bottom: 8px;
+        }
 
-        &__character {}
+        &__character {
+            gap: 12px;
+        }
 
         &__header {
             font-size: 15.625px;
@@ -285,14 +303,20 @@
             line-height: 1.2;
         }
 
-        &__wrapper {}
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
-        &__activity {}
+        &__activity {
+            width: 408px;
+        }
 
         &__subtitle {
             font-size: 18.75px;
             font-weight: 400;
             line-height: 1.83;
+            margin-bottom: 13px;
         }
 
         &__descs {}
@@ -306,36 +330,52 @@
             font-family: "Open Sans";
             font-size: 14px;
             line-height: normal;
+            margin-top: 24px;
         }
 
-        &__address {}
+        &__address {
+            width: 244px;
+            height: 216px;
+            padding: 29px 24px;
+        }
 
         &__caption {
             font-family: "Open Sans";
             font-size: 18.75px;
             font-weight: 600;
             line-height: 1.83;
+            margin-bottom: 8px;
         }
 
-        &__works {}
+        &__works {
+            margin-bottom: 30px;
+            gap: 25px;
+        }
 
         &__work {
             font-size: 15.625px;
             line-height: normal;
         }
 
-        &__reviews {}
+        &__reviews {
+            margin-top: 32px;
+        }
 
         &__title {
             font-family: "Open Sans";
             font-size: 25px;
             font-weight: 400;
             line-height: 1.38;
+            margin-bottom: 48px;
         }
 
-        &__list {}
+        &__list {
+            display: flex;
+            gap: 40px;
+        }
 
         &__item {
+            transition: margin 0.5s ease;
 
             &:nth-child(2),
             &:nth-child(3) {
@@ -350,26 +390,55 @@
         }
 
         &__text {
+            transition: opacity 0.5s ease;
             padding: 22px 16px 23px 38px;
             width: 374px;
             border: 1px solid $light-accent-color;
             border-radius: 20.627px;
             background: #F2F3F5;
             font-size: 17.786px;
+            opacity: 0;
+            pointer-events: none;
+            left: 72px;
+            top: -32px;
+        }
+
+        &__item:hover &__text {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        &__item:nth-child(1):hover+&__item:nth-child(2) {
+            margin-left: 346px;
+        }
+
+        &__item:nth-child(2):hover+&__item:nth-child(3) {
+            margin-left: 346px;
         }
     }
 }
 
 @media screen and (min-width: 1766px) {
     .doctor {
-        &__close {}
+        width: 1024px;
+        padding: 64px;
+        padding-bottom: 87px;
+
+        &__close {
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
 
         &__dagger {
             width: 24px;
             height: 24px;
         }
 
-        &__person {}
+        &__person {
+            gap: 64px;
+            margin-bottom: 66px;
+        }
 
         &__avatar {
             width: 240px;
@@ -381,11 +450,17 @@
         &__name {
             font-size: 32px;
             line-height: 1.38;
+            margin-bottom: 24px;
         }
 
-        &__characters {}
+        &__characters {
+            gap: 14px;
+            margin-bottom: 14px;
+        }
 
-        &__character {}
+        &__character {
+            gap: 14px;
+        }
 
         &__header {
             font-size: 20px;
@@ -405,10 +480,13 @@
 
         &__wrapper {}
 
-        &__activity {}
+        &__activity {
+            width: 523px;
+        }
 
         &__subtitle {
             font-size: 24px;
+            margin-bottom: 12px;
         }
 
         &__descs {}
@@ -421,9 +499,14 @@
             font-size: 16px;
             font-weight: 600;
             text-decoration-line: underline;
+            margin-top: 26px;
         }
 
-        &__address {}
+        &__address {
+            width: 312px;
+            height: 274px;
+            padding: 40px 27px;
+        }
 
         &__caption {
             font-size: 24px;
@@ -436,13 +519,18 @@
             font-size: 20px;
         }
 
-        &__reviews {}
+        &__reviews {
+            margin-top: 53px;
+        }
 
         &__title {
             font-size: 32px;
+            margin-bottom: 85px;
         }
 
-        &__list {}
+        &__list {
+            gap: 30px;
+        }
 
         &__item {}
 
@@ -459,6 +547,15 @@
             border-radius: 20.627px;
             background: #F2F3F5;
             font-size: 22.767px;
+            left: 90px;
+        }
+
+        &__item:nth-child(1):hover+&__item:nth-child(2) {
+            margin-left: 463px;
+        }
+
+        &__item:nth-child(2):hover+&__item:nth-child(3) {
+            margin-left: 463px;
         }
     }
 }
