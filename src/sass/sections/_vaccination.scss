@@ -3,33 +3,35 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1303px;
-    height: 1048px;
+    width: 342px;
+    height: calc(100% - 30px);
     overflow: hidden;
     background: $background-color;
-    padding: 69px 67px;
+    padding: 30px;
 
     &__close {
         background-color: transparent;
         position: absolute;
-        top: 40px;
-        right: 24px;
+        top: 12px;
+        right: 12px;
     }
 
     &__dagger {
         fill: none;
         stroke: $dark-accent-color;
+        width: 16px;
+        height: 16px;
     }
 
     &__wrapper {
-        border-radius: 50px;
+        border-radius: 20px;
         border: 1px solid var(--blue-blue, #72B7F2);
-        padding: 28px 40px;
+        padding: 10px 20px;
     }
 
     &__title {
         color: $dark-accent-color;
-        font-size: 32px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.38;
         margin-bottom: 24px;
@@ -39,7 +41,7 @@
     &__content {
         overflow-y: auto;
         overflow-x: hidden;
-        height: 786px;
+        height: calc(100vh - 30px - 132px);
         scrollbar-width: thin;
         scrollbar-color: #D0E1F1 #72B7F2;
     }
@@ -47,13 +49,14 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        padding: 2px 89px 14px 116px;
+        padding: 10px;
+        padding-left: 40px;
         background: $accent-bg-color;
     }
 
     &__subtitle {
         color: $dark-accent-color;
-        font-size: 24px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 1.83;
     }
@@ -61,37 +64,100 @@
     &__list {}
 
     &__item {
-        border-bottom: 14px solid $additional-color;
+        border-bottom: 8px solid $additional-color;
         display: flex;
-        padding: 8px 103px 14px 24px;
+        padding: 8px 14px;
         align-items: center;
     }
 
     &__icon {
         fill: none;
         stroke: #000;
+        width: 16px;
+        height: 16px;
     }
 
     &__name {
         color: $text-color;
-        font-size: 24px;
+        font-size: 10px;
         font-weight: 400;
-        margin-left: 56px;
+        margin-left: 14px;
         margin-right: auto;
+        width: 180px;
     }
 
     &__cost {
         color: $dark-accent-color;
-        font-size: 20px;
+        font-size: 8px;
         font-weight: 700;
         line-height: 1.2;
     }
 }
 
 @media screen and (min-width: 1334px) {
-    .vaccination {}
+    .vaccination {
+        width: 1286px;
+        padding: 40px;
+
+        padding: 69px 67px;
+
+        &__close {
+            top: 40px;
+            right: 24px;
+        }
+
+        &__dagger {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__wrapper {
+            border-radius: 50px;
+            padding: 28px 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__content {
+            height: calc(100vh - 30px - 262px);
+        }
+
+        &__header {
+            padding: 2px 89px 14px 116px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__list {}
+
+        &__item {
+            border-bottom: 14px solid $additional-color;
+            padding: 8px 103px 14px 24px;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        &__name {
+            font-size: 24px;
+            margin-left: 56px;
+            width: auto;
+        }
+
+        &__cost {
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (min-width: 1766px) {
-    .vaccination {}
+    .vaccination {
+        width: 1303px;
+    }
 }
