@@ -49,3 +49,59 @@
 
     &__run {}
 }
+
+@media screen and (min-width: 1334px) {
+    .header {
+        padding-top: 12px;
+
+        & .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__btn {}
+
+        &__menu {
+            stroke: $light-accent-color;
+        }
+
+        &__logo {}
+
+        &__img {
+            width: 186px;
+            height: 48px;
+        }
+
+        &__search {
+            stroke: $light-accent-color;
+            fill: none;
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__item {}
+
+        &__link {
+            &--active {}
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__user {}
+
+        &__states {
+            display: block;
+        }
+
+        &__state {}
+
+        &__run {}
+    }
+}
+
+@media screen and (min-width: 1766px) {}
