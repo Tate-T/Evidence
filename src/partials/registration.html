@@ -1,7 +1,7 @@
 <div class="backdrop">
   <div class="regis">
     <div class="regis__header">
-      <a href="" class="regis__lofo">
+      <a href="" class="regis__logo">
         <picture>
           <source
             srcset="
@@ -67,14 +67,14 @@
     </picture>
     <form class="regis__text">
       <h2 class="regis__title">Допоможемо знайти лікаря</h2>
-      <label class="suoort__label">
+      <label class="regis__label">
         <input
           placeholder="Як до вас звернутись?"
           type="text"
           class="regis__input"
         />
       </label>
-      <label class="suoort__label">
+      <label class="regis__label">
         <input
           placeholder="+380(___) ___ -__-__"
           type="tel"
@@ -83,18 +83,18 @@
       </label>
       <p class="regis__question">Як з вами краще зв’язатися?</p>
       <label class="regis__choose">
-        <div class="regis__fake">
-          <div class="regis__in"></div>
-        </div>
         <input type="radio" name="contact" value="viber" class="regis__radio" />
         Напишіть мені на Viber
+        <div class="regis__fake">
+          <div class="regis__checked"></div>
+        </div>
       </label>
       <label class="regis__choose">
-        <div class="regis__fake">
-          <div class="regis__in"></div>
-        </div>
         <input type="radio" name="contact" value="phone" class="regis__radio" />
         Подзвоніть мені
+        <div class="regis__fake">
+          <div class="regis__checked"></div>
+        </div>
       </label>
       <button class="regis__button">Відправити</button>
     </form>
