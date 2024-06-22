@@ -1,16 +1,26 @@
 .header {
-    padding-top: 12px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
 
     & .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
     &__btn {}
 
+    &__btn:hover &__search,
+    &__btn:hover &__menu {
+        stroke: $dark-accent-color;
+    }
+
     &__menu {
         stroke: $light-accent-color;
+        transition: stroke 0.5s ease;
     }
 
     &__logo {}
@@ -22,6 +32,7 @@
 
     &__search {
         stroke: $light-accent-color;
+        transition: stroke 0.5s ease;
         fill: none;
     }
 
@@ -52,56 +63,144 @@
 
 @media screen and (min-width: 1334px) {
     .header {
-        padding-top: 12px;
+        top: 40px;
 
         & .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
         }
 
-        &__btn {}
-
-        &__menu {
-            stroke: $light-accent-color;
+        &__btn {
+            display: none;
         }
 
         &__logo {}
 
         &__img {
-            width: 186px;
-            height: 48px;
-        }
-
-        &__search {
-            stroke: $light-accent-color;
-            fill: none;
+            width: 172px;
+            height: 50px;
         }
 
         &__list {
-            display: block;
+            display: flex;
+            margin-left: 511px;
+            gap: 32px;
         }
 
         &__item {}
 
         &__link {
-            &--active {}
+            color: $text-color;
+            font-size: 14.229px;
+            font-weight: 400;
+            line-height: 2.2;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: $light-accent-color;
+            }
+
+            .header__item &--active {
+                color: $dark-accent-color;
+            }
         }
 
         &__wrapper {
             display: block;
+            margin-left: auto;
         }
 
-        &__user {}
+        &__user {
+            width: 30px;
+            height: 30px;
+            fill: none;
+            stroke: $dark-accent-color;
+        }
 
         &__states {
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 180px;
+            border-radius: 20px;
+            border: 1px solid $light-accent-color;
+            background: #F0ECEE;
+            transition: opacity 0.5s ease;
+        }
+
+        &__wrapper:hover+&__states,
+        &__states:hover {
+            opacity: 1;
+        }
+
+        &__state {}
+
+        &__run {
+            color: $text-color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.33;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: $dark-accent-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1766px) {
+    .header {
+        top: 40px;
+
+        &__btn {}
+
+        &__logo {}
+
+        &__img {
+            width: 240px;
+            height: 70px;
+        }
+
+        &__list {
+            margin-left: 702px;
+            gap: 40px;
+        }
+
+        &__item {}
+
+        &__link {
+            color: $text-color;
+            font-size: 14.229px;
+            font-weight: 400;
+            line-height: 2.2;
+            font-size: 20px;
+        }
+
+        &__wrapper {
             display: block;
+            margin-left: auto;
+        }
+
+        &__user {
+            width: 42px;
+            height: 42px;
+            fill: none;
+            stroke: $dark-accent-color;
+        }
+
+        &__states {
+            top: 70px;
         }
 
         &__state {}
 
         &__run {}
+
     }
 }
-
-@media screen and (min-width: 1766px) {}

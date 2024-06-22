@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 84px;
+    padding-top: 132px;
     padding-bottom: 16px;
     position: relative;
     z-index: -2;
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 1334px) {
     .hero {
-        padding-top: 200px;
+        padding-top: 290px;
         padding-bottom: 90px;
         border-bottom: 0.711px solid $light-accent-color;
         background: linear-gradient(181deg, #F0EBEB 3.63%, #ECEFF7 97.25%);
@@ -168,7 +168,7 @@
 
 @media screen and (min-width: 1766px) {
     .hero {
-        padding-top: 329px;
+        padding-top: 439px;
         padding-bottom: 69px;
         border-bottom: 1px solid $light-accent-color;
 
