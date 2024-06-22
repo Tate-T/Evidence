@@ -1,0 +1,110 @@
+.services {
+    padding-top: 32px;
+    padding-bottom: 15px;
+
+    &__title {
+        color: $dark-accent-color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.13;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        width: 366px;
+        overflow: hidden;
+        display: flex;
+        gap: 44px;
+        position: relative;
+        padding-bottom: 36px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        min-width: 128px;
+        height: 128px;
+        border-radius: 23.704px;
+        background: #CEF2F0;
+    }
+
+    &__icon {
+        width: 47px;
+        height: 47px;
+        fill: $dark-accent-color;
+    }
+
+    &__subtitle {
+        color: $dark-accent-color;
+        font-size: 11.378px;
+        font-weight: 400;
+        line-height: 1.83;
+    }
+
+
+}
+
+@media screen and (max-width: 1333px) {
+    .services {
+        &__item {
+            position: relative;
+            transition: all 0.7s ease;
+
+            &:nth-of-type(6),
+            &:nth-of-type(7),
+            &:nth-of-type(8),
+            &:nth-of-type(9),
+            &:nth-of-type(10) {
+                display: none;
+            }
+        }
+
+        &__dots {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 24px;
+            position: absolute;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &__dot {
+            width: 12px;
+            height: 12px;
+            background-color: $accent-bg-color;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: $dark-accent-color;
+            }
+        }
+
+        input[type='radio'] {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        #r1:checked~.s1 {
+            margin-left: 0;
+        }
+
+        #r2:checked~.s1 {
+            margin-left: -172px;
+        }
+
+        #r3:checked~.s1 {
+            margin-left: -343px;
+        }
+
+        #r4:checked~.s1 {
+            margin-left: -515px;
+        }
+    }
+}
