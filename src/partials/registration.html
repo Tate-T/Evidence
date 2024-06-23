@@ -59,38 +59,39 @@
       />
       <img
         class="regis__photo"
-        width="186"
-        height="48"
         src="./img/mobile/registration/registration-photo@1x-mobile.webp 1x"
-        alt="registration-photo"
+        alt="regis-photo"
       />
     </picture>
-    <div class="thank__cont">
-      <picture>
-        <source
-          srcset="
-            ./img/desktop/thank/thank-heart@1x-desktop.webp 1x,
-            ./img/desktop/thank/thank-heart@2x-desktop.webp 2x
-          "
+    <form class="regis__text">
+      <h2 class="regis__title">Допоможемо знайти лікаря</h2>
+      <label class="regis__label">
+        <input
+          placeholder="Як до вас звернутись?"
+          type="text"
+          class="regis__input"
         />
-
-        <img
-          class="regis__heart"
-          width="186"
-          height="48"
-          src="./img/desktop/thank/thank-heart@1x-desktop.webp 1x"
-          alt="thank-heart"
-        />
-      </picture>
-      <h2 class="thank__title">
-        Дякуємо, що звернулись до нашого медичного центру!
-      </h2>
-      <p class="thank__text">
-        Ми вже шукаємо для вас лікаря. Вартість консультації – 400 грн. Тим
-        часом, будь ласка,
-        <span class="thank__text--bold">зареєструйтесь.</span>
-      </p>
-    </div>
+      </label>
+      <label class="regis__label">
+        <input placeholder="+380(___) ___ --" type="tel" class="regis__input" />
+      </label>
+      <p class="regis__question">Як з вами краще зв’язатися?</p>
+      <label class="regis__choose">
+        <input type="radio" name="contact" value="viber" class="regis__radio" />
+        Напишіть мені на Viber
+        <div class="regis__fake">
+          <div class="regis__checked"></div>
+        </div>
+      </label>
+      <label class="regis__choose">
+        <input type="radio" name="contact" value="phone" class="regis__radio" />
+        Подзвоніть мені
+        <div class="regis__fake">
+          <div class="regis__checked"></div>
+        </div>
+      </label>
+      <button class="regis__button">Відправити</button>
+    </form>
     <button class="regis__close">
       <svg class="regis__icon" width="24" height="24">
         <use href="../svg/icons.svg#close-square"></use>
