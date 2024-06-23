@@ -19,7 +19,7 @@
     
     <title>Evidence</title>
     <script type="module" crossorigin src="/Evidence/assets/menu-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/Evidence/assets/doctors-page-3ffbd0e3.css">
+    <link rel="stylesheet" href="/Evidence/assets/doctors-page-f557ef45.css">
   </head>
   <body>
     <header class="header">
@@ -528,14 +528,14 @@
       </picture>
       <form class="support__text">
         <h2 class="support__title">Допоможемо знайти лікаря</h2>
-        <label class="suoort__label">
+        <label class="support__label">
           <input
             placeholder="Як до вас звернутись?"
             type="text"
             class="support__input"
           />
         </label>
-        <label class="suoort__label">
+        <label class="support__label">
           <input
             placeholder="+380(___) ___ -__-__"
             type="tel"
@@ -543,30 +543,32 @@
           />
         </label>
         <p class="support__question">Як з вами краще зв’язатися?</p>
-        <label class="support__choose">
-          <input
-            type="radio"
-            name="contact"
-            value="viber"
-            class="support__radio"
-          />
-          Напишіть мені на Viber
-          <div class="support__fake">
-            <div class="support__checked"></div>
-          </div>
-        </label>
-        <label class="support__choose">
-          <input
-            type="radio"
-            name="contact"
-            value="phone"
-            class="support__radio"
-          />
-          Подзвоніть мені
-          <div class="support__fake">
-            <div class="support__checked"></div>
-          </div>
-        </label>
+        <div class="support__chooses">
+          <label class="support__choose">
+            <input
+              type="radio"
+              name="contact"
+              value="viber"
+              class="support__radio"
+            />
+            <div class="support__fake">
+              <div class="support__checked"></div>
+            </div>
+            Напишіть мені на Viber
+          </label>
+          <label class="support__choose">
+            <input
+              type="radio"
+              name="contact"
+              value="phone"
+              class="support__radio"
+            />
+            <div class="support__fake">
+              <div class="support__checked"></div>
+            </div>
+            Подзвоніть мені
+          </label>
+        </div>
         <button class="support__button">Відправити</button>
       </form>
     </div>
