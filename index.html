@@ -18,8 +18,9 @@
     />
     
     <title>Evidence</title>
-    <script type="module" crossorigin src="/Evidence/assets/menu-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/Evidence/assets/index-a2c0c024.css">
+    <script type="module" crossorigin src="/Evidence/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/Evidence/assets/menu-3cfb730f.js">
+    <link rel="stylesheet" href="/Evidence/assets/index-c02aa921.css">
   </head>
   <body>
     <header class="header">
@@ -343,7 +344,9 @@
             <button class="faq__subtitle">Реєстрація та вхід</button>
           </li>
           <li class="faq__squad">
-            <button class="faq__subtitle">Вакцинація</button>
+            <button data-vaccination-open class="faq__subtitle">
+              Вакцинація
+            </button>
           </li>
           <li class="faq__squad">
             <button class="faq__subtitle">Відео-консультація</button>
@@ -894,9 +897,9 @@
   </div>
 </div>
 
-    <div class="backdrop">
+    <div data-vaccination class="backdrop is-hidden">
   <div class="vaccination">
-    <button class="vaccination__close">
+    <button data-vaccination-close class="vaccination__close">
       <svg class="vaccination__dagger" width="24" height="24">
         <use href="../svg/icons.svg#close-square"></use>
       </svg>
