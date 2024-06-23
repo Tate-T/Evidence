@@ -1,0 +1,77 @@
+<section class="support">
+  <div class="container">
+    <div class="support__cont">
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/support/support-photo@1x-desktop.webp 1x,
+            ./img/desktop/support/support-photo@2x-desktop.webp 2x
+          "
+          media="(min-width: 1766px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/support/support-photo@1x-tablet.webp 1x,
+            ./img/tablet/support/support-photo@2x-tablet.webp 2x
+          "
+          media="(min-width: 1334px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/support/support-photo@1x-mobile.webp 1x,
+            ./img/mobile/support/support-photo@2x-mobile.webp 2x
+          "
+          media="(max-width: 1333px)"
+        />
+        <img
+          class="support__photo"
+          alt=""
+          src="./img/mobile/support/support-photo1@1x-mobile.webp 1x"
+        />
+      </picture>
+      <form class="support__text">
+        <h2 class="support__title">Допоможемо знайти лікаря</h2>
+        <label class="suoort__label">
+          <input
+            placeholder="Як до вас звернутись?"
+            type="text"
+            class="support__input"
+          />
+        </label>
+        <label class="suoort__label">
+          <input
+            placeholder="+380(___) ___ -__-__"
+            type="tel"
+            class="support__input"
+          />
+        </label>
+        <p class="support__question">Як з вами краще зв’язатися?</p>
+        <label class="support__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="viber"
+            class="support__radio"
+          />
+          Напишіть мені на Viber
+          <div class="support__fake">
+            <div class="support__checked"></div>
+          </div>
+        </label>
+        <label class="support__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="phone"
+            class="support__radio"
+          />
+          Подзвоніть мені
+          <div class="support__fake">
+            <div class="support__checked"></div>
+          </div>
+        </label>
+        <button class="support__button">Відправити</button>
+      </form>
+    </div>
+  </div>
+</section>
