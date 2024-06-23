@@ -53,3 +53,95 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1334px) {
+    .reviews {
+        padding-top: 40px;
+        padding-bottom: 76px;
+
+        &__title {
+            font-family: "Open Sans";
+            font-size: 34.15px;
+            font-weight: 600;
+            line-height: 0.92;
+            margin-bottom: 24px;
+        }
+
+        &__wrapper {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 520px;
+        }
+
+        &__list {
+            gap: 136px;
+        }
+
+        &__item {}
+
+        &__img {
+            width: 140px;
+            height: 140px;
+        }
+
+        &__text {
+            left: 106px;
+            top: -51px;
+            font-size: 22.767px;
+            width: 484px;
+            height: 242px;
+            padding: 28px;
+            padding-left: 57px;
+            border-radius: 40px;
+            border: 0.711px solid var(--blue-blue, #72B7F2);
+        }
+
+        &__icon {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1766px) {
+    .reviews {
+        padding-top: 0;
+        padding-bottom: 100px;
+
+        &__title {
+            font-size: 48px;
+            margin-bottom: 100px;
+        }
+
+        &__wrapper {
+            gap: 700px;
+        }
+
+        &__list {
+            gap: 197px;
+        }
+
+        &__item {}
+
+        &__img {
+            width: 190px;
+            height: 190px;
+        }
+
+        &__text {
+            left: 150px;
+            top: -72px;
+            font-size: 32px;
+            width: 680px;
+            height: 340px;
+            padding: 38px 39px 38px 80px;
+            border-radius: 50px;
+            border: 1px solid var(--blue-blue, #72B7F2);
+        }
+
+        &__icon {
+            width: 743px;
+            height: 731px;
+        }
+    }
+}
