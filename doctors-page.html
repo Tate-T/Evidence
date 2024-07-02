@@ -20,7 +20,7 @@
     <title>Evidence</title>
     <script type="module" crossorigin src="/Evidence/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Evidence/assets/menu-2310e519.js">
-    <link rel="stylesheet" href="/Evidence/assets/doctors-page-2a9d8ae6.css">
+    <link rel="stylesheet" href="/Evidence/assets/doctors-page-a728c9f2.css">
   </head>
   <body>
     <header class="header">
@@ -769,7 +769,9 @@
             <p class="doctor__info">5 років</p>
           </li>
         </ul>
-        <button class="doctor__btn">Записатись на прийом</button>
+        <button data-record-open class="doctor__btn">
+          Записатись на прийом
+        </button>
       </div>
     </div>
     <div class="doctor__wrapper">
@@ -885,7 +887,7 @@
   </div>
 </div>
 
-    <div class="backdrop">
+    <div data-record class="backdrop is-hidden">
   <div class="record">
     <div class="record__way">
       <svg class="record__arrow" width="42" height="42">
@@ -960,7 +962,7 @@
         </div>
       </li>
     </ul>
-    <button class="record__close">
+    <button data-record-close class="record__close">
       <svg class="record__icon" width="24" height="24">
         <use href="../svg/icons.svg#close-square"></use>
       </svg>
