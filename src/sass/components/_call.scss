@@ -1,4 +1,5 @@
 .call {
+    pointer-events: all;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -9,6 +10,7 @@
     height: 50px;
 
     &__container {
+        pointer-events: none;
         position: fixed;
         left: 50%;
         bottom: 50px;
