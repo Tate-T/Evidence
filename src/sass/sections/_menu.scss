@@ -1,9 +1,13 @@
 .menu {
+    background-color: $background-color;
+    height: 100dvh;
 
     &__container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 100%;
+
     }
 
     &__header {
@@ -58,7 +62,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 2.75;
-        color: #3a3b3d;
+        color: $text-color;
         border-bottom: 1px solid $accent-bg-color;
         width: 100%;
         display: block;

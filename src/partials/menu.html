@@ -1,9 +1,9 @@
-<div class="backdrop">
+<div data-menu class="backdrop is-hidden">
   <div class="menu">
     <div class="menu__container">
       <div class="menu__main">
         <div class="menu__header">
-          <button class="menu__close">
+          <button data-menu-close class="menu__close">
             <svg class="menu__icon" width="24" height="24">
               <use href="./svg/icons.svg#close-square"></use>
             </svg>
@@ -12,29 +12,26 @@
             <picture>
               <source
                 srcset="
-                  ./img/desktop/header/logo@1x-desktop.webp  1x,
-                  ./img/desktop/doctors/logo@2x-desktop.webp 2x
+                  ./img/desktop/header/logo@1x-desktop.webp 1x,
+                  ./img/desktop/header/logo@2x-desktop.webp 2x
                 "
                 media="(min-width: 1766px)"
               />
               <source
-                srcset="
-                  ./img/tablet/doctors/logo@1x-tablet.webp 1x,
-                  ./img/tablet/doctors/logo@2x-tablet.webp 2x
-                "
+                srcset="./img/tablet/header/logo@1x-tablet.webp 1x, header"
                 media="(min-width: 1334px)"
               />
               <source
                 srcset="
-                  ./img/mobile/doctors/logo@1x-mobile.webp 1x,
-                  ./img/mobile/doctors/logo@2x-mobile.webp 2x
+                  ./img/mobile/header/logo@1x-mobile.webp 1x,
+                  ./img/mobile/header/logo@2x-mobile.webp 2x
                 "
                 media="(max-width: 1333px)"
               />
               <img
-                class="doctors__photo"
+                class="menu__photo"
                 alt=""
-                src="./img/mobile/doctors/logo@1x-mobile.webp 1x"
+                src="./img/mobile/header/logo@1x-mobile.webp 1x"
               />
             </picture>
           </a>
