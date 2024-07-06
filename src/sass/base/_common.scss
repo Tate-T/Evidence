@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open sans";
     background-color: $background-color;
+    transition: all 0.5s ease;
 }
 
 .backdrop {
