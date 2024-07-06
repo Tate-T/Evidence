@@ -1,6 +1,14 @@
 .search {
-    padding: 200px 0 224px;
+    padding: 24px 0 29px;
     position: relative;
+
+    @media screen and (min-width: 1334px) {
+        padding: 120px 0 224px;
+    }
+
+    @media screen and (min-width: 1766px) {
+        padding: 200px 0 224px;
+    }
 
     &__container {
         position: relative;
