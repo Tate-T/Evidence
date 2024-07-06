@@ -20,7 +20,7 @@
     <title>Evidence</title>
     <script type="module" crossorigin src="/Evidence/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/Evidence/assets/menu-2310e519.js">
-    <link rel="stylesheet" href="/Evidence/assets/index-8f0274e3.css">
+    <link rel="stylesheet" href="/Evidence/assets/index-d7eb3efc.css">
   </head>
   <body>
     <header class="header">
@@ -95,7 +95,7 @@
   <div class="container">
     <h1 data-text="Evidence" class="hero__title">Evidence</h1>
     <p class="hero__text">Територія сучаної педіатрії - доказ нашої любові</p>
-    <button class="hero__btn">Записатись на прийом</button>
+    <button data-regis-open class="hero__btn">Записатись на прийом</button>
     <ul class="hero__list">
       <li class="hero__item">
         <svg class="hero__icon" width="42" height="42">
@@ -634,7 +634,7 @@
   </div>
 </div>
 
-    <div class="backdrop">
+    <div data-regis class="backdrop is-hidden">
   <div class="regis">
     <div class="regis__header">
       <a href="" class="regis__logo">
@@ -662,65 +662,54 @@
       </a>
       <p class="regis__conect">З’єднуємо з лікарем...</p>
     </div>
-    <picture>
-      <source
-        srcset="/Evidence/assets/registration-photo@1x-desktop-c5f70963.webp 1x, /Evidence/assets/registration-photo@2x-desktop-af706282.webp 2x"
-        media="(min-width: 1766px)"
-      />
-      <source
-        srcset="
-          ./img/tablet/registration/registration-photo@1x-tablet.webp 1x,
-          ./img/tablet/registration/registration-photo@2x-tablet.webp 2x
-        "
-        media="(min-width: 1334px)"
-      />
-      <source
-        srcset="
-          ./img/mobile/registration/registration-photo@1x-mobile.webp 1x,
-          ./img/mobile/registration/registration-photo@2x-mobile.webp 2x
-        "
-        media="(max-width: 1333px)"
-      />
-      <img
-        class="regis__photo"
-        src="./img/mobile/registration/registration-photo@1x-mobile.webp 1x"
-        alt="regis-photo"
-      />
-    </picture>
-    <form class="regis__text">
+    <form class="regis__form">
       <h2 class="regis__title">Допоможемо знайти лікаря</h2>
-      <label class="regis__label">
-        <input
-          placeholder="Як до вас звернутись?"
-          type="text"
-          class="regis__input"
-        />
-      </label>
-      <label class="regis__label">
-        <input
-          placeholder="+380(___) ___ -__-__"
-          type="tel"
-          class="regis__input"
-        />
-      </label>
+      <div class="regis__labels">
+        <label class="regis__label">
+          <input
+            placeholder="Як до вас звернутись?"
+            type="text"
+            class="regis__input"
+          />
+        </label>
+        <label class="regis__label">
+          <input
+            placeholder="+380(___) ___ -__-__"
+            type="tel"
+            class="regis__input"
+          />
+        </label>
+      </div>
       <p class="regis__question">Як з вами краще зв’язатися?</p>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="viber" class="regis__radio" />
-        Напишіть мені на Viber
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="phone" class="regis__radio" />
-        Подзвоніть мені
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
+      <div class="regis__chooses">
+        <label class="regis__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="viber"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Напишіть мені на Viber
+        </label>
+        <label class="regis__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="phone"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Подзвоніть мені
+        </label>
+      </div>
       <button class="regis__button">Відправити</button>
     </form>
-    <button class="regis__close">
+    <button data-regis-close class="regis__close">
       <svg class="regis__icon" width="24" height="24">
         <use href="../svg/icons.svg#close-square"></use>
       </svg>
@@ -766,10 +755,7 @@
         media="(min-width: 1766px)"
       />
       <source
-        srcset="
-          ./img/tablet/registration/registration-photo@1x-tablet.webp 1x,
-          ./img/tablet/registration/registration-photo@2x-tablet.webp 2x
-        "
+        srcset="/Evidence/assets/registration-photo@1x-tablet-8f06f6fe.webp 1x, /Evidence/assets/registration-photo@2x-tablet-a0697c14.webp 2x"
         media="(min-width: 1334px)"
       />
       <source
