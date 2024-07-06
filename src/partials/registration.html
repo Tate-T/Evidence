@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div data-regis class="backdrop is-hidden">
   <div class="regis">
     <div class="regis__header">
       <a href="" class="regis__logo">
@@ -35,68 +35,54 @@
       </a>
       <p class="regis__conect">З’єднуємо з лікарем...</p>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./img/desktop/registration/registration-photo@1x-desktop.webp 1x,
-          ./img/desktop/registration/registration-photo@2x-desktop.webp 2x
-        "
-        media="(min-width: 1766px)"
-      />
-      <source
-        srcset="
-          ./img/tablet/registration/registration-photo@1x-tablet.webp 1x,
-          ./img/tablet/registration/registration-photo@2x-tablet.webp 2x
-        "
-        media="(min-width: 1334px)"
-      />
-      <source
-        srcset="
-          ./img/mobile/registration/registration-photo@1x-mobile.webp 1x,
-          ./img/mobile/registration/registration-photo@2x-mobile.webp 2x
-        "
-        media="(max-width: 1333px)"
-      />
-      <img
-        class="regis__photo"
-        src="./img/mobile/registration/registration-photo@1x-mobile.webp 1x"
-        alt="regis-photo"
-      />
-    </picture>
-    <form class="regis__text">
+    <form class="regis__form">
       <h2 class="regis__title">Допоможемо знайти лікаря</h2>
-      <label class="regis__label">
-        <input
-          placeholder="Як до вас звернутись?"
-          type="text"
-          class="regis__input"
-        />
-      </label>
-      <label class="regis__label">
-        <input
-          placeholder="+380(___) ___ -__-__"
-          type="tel"
-          class="regis__input"
-        />
-      </label>
+      <div class="regis__labels">
+        <label class="regis__label">
+          <input
+            placeholder="Як до вас звернутись?"
+            type="text"
+            class="regis__input"
+          />
+        </label>
+        <label class="regis__label">
+          <input
+            placeholder="+380(___) ___ -__-__"
+            type="tel"
+            class="regis__input"
+          />
+        </label>
+      </div>
       <p class="regis__question">Як з вами краще зв’язатися?</p>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="viber" class="regis__radio" />
-        Напишіть мені на Viber
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="phone" class="regis__radio" />
-        Подзвоніть мені
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
+      <div class="regis__chooses">
+        <label class="regis__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="viber"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Напишіть мені на Viber
+        </label>
+        <label class="regis__choose">
+          <input
+            type="radio"
+            name="contact"
+            value="phone"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Подзвоніть мені
+        </label>
+      </div>
       <button class="regis__button">Відправити</button>
     </form>
-    <button class="regis__close">
+    <button data-regis-close class="regis__close">
       <svg class="regis__icon" width="24" height="24">
         <use href="../svg/icons.svg#close-square"></use>
       </svg>
