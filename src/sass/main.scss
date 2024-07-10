@@ -22,3 +22,10 @@
 @import "./sections/vaccination";
 @import "./sections/contact";
 @import "./sections/menu";
+
+.header {
+
+    &__item:nth-child(1) &__link {
+        color: $dark-accent-color;
+    }
+}

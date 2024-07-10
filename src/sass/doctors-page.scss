@@ -17,3 +17,10 @@
 @import "./sections/record";
 @import "./sections/contact";
 @import "./sections/menu";
+
+.header {
+
+    &__item:nth-child(2) &__link {
+        color: $dark-accent-color;
+    }
+}
