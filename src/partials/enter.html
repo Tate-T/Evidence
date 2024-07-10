@@ -1,0 +1,69 @@
+<section class="enter">
+  <picture>
+    <source
+      srcset="
+        ./img/desktop/enter/enter-img@1x-desktop.webp 1x,
+        ./img/desktop/enter/enter-img@2x-desktop.webp 2x
+      "
+    />
+    <img
+      class="enter__img"
+      width="240"
+      height="240"
+      src="./img/desktop/enter/enter-img@1x-desktop.webp 1x"
+      alt="Feet"
+    />
+  </picture>
+  <form class="enter__content">
+    <h1 class="enter__title">Вхід в особистий кабінет</h1>
+    <ul class="enter__list">
+      <li class="enter__item">
+        <label class="enter__label">
+          Персональний номер *
+          <input
+            name="enter-number"
+            type="text"
+            class="enter__input"
+            placeholder="EV-0*****"
+            required
+          />
+        </label>
+      </li>
+      <li class="enter__item">
+        <label class="enter__label">
+          Пароль *
+          <input
+            name="enter-password"
+            type="text"
+            class="enter__input"
+            placeholder="*********"
+            required
+          />
+          <svg class="enter__eye" width="20" height="20">
+            <use href="./svg/icons.svg#eye-slash"></use>
+          </svg>
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="enter__btn"></button>
+    <p class="enter__forget">Забули пароль?</p>
+    <div class="enter__block">
+      <p class="enter__first">Вперше тут?</p>
+      <a href="" class="enter__registration">Зареєеструватися</a>
+    </div>
+    <ul class="enter__medias">
+      <li class="enter__media">
+        <svg class="enter__icon" width="36" height="36">
+          <use href="./svg/icons.svg#modal-google"></use>
+        </svg>
+        <p class="enter__sign">Sign up with Google</p>
+      </li>
+      <li class="enter__media">
+        <svg class="enter__icon" width="36" height="36">
+          <use href="./svg/icons.svg#modal-facebook"></use>
+        </svg>
+        <p class="enter__sign">Sign up with Facebook</p>
+      </li>
+    </ul>
+  </form>
+</section>
