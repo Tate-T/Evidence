@@ -2,15 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    transition: all 0.5s ease;
+}
+
 body {
     font-family: "Open sans";
     background-color: $background-color;
-    transition: all 0.5s ease;
 }
 
 .backdrop {
     background-color: #2886d950;
     position: fixed;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
