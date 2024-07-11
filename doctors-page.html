@@ -535,6 +535,7 @@
               placeholder="Як до вас звернутись?"
               type="text"
               class="support__input"
+              required
             />
           </label>
           <label class="support__label">
@@ -542,6 +543,7 @@
               placeholder="+380(___) ___ -__-__"
               type="tel"
               class="support__input"
+              required
             />
           </label>
         </div>
@@ -553,6 +555,7 @@
               name="contact"
               value="viber"
               class="support__radio"
+              required
             />
             <div class="support__fake">
               <div class="support__checked"></div>
@@ -565,6 +568,7 @@
               name="contact"
               value="phone"
               class="support__radio"
+              required
             />
             <div class="support__fake">
               <div class="support__checked"></div>
@@ -572,7 +576,7 @@
             Подзвоніть мені
           </label>
         </div>
-        <button class="support__button">Відправити</button>
+        <button type="submit" class="support__button">Відправити</button>
       </form>
     </div>
   </div>
@@ -742,7 +746,7 @@
   <div class="doctor">
     <button data-doctor-close class="doctor__close">
       <svg class="doctor__dagger" width="24" height="24">
-        <use href="../svg/icons.svg#close-square"></use>
+        <use href="/Evidence/assets/icons-02d1e7bd.svg#close-square"></use>
       </svg>
     </button>
     <div class="doctor__person">
@@ -945,6 +949,7 @@
           <label class="record__label" for="">
             Персональний номер :
             <input
+              required
               placeholder="Ваш персональний номер"
               class="record__input"
               type="text"
@@ -953,12 +958,13 @@
           <label class="record__label" for="">
             Пароль :
             <input
+              required
               placeholder="*************"
               class="record__input"
               type="password"
             />
           </label>
-          <button class="record__btn">Вхід</button>
+          <button type="submit" class="record__btn">Вхід</button>
           <div class="record__registes">
             <p class="record__regist">Забув пароль</p>
             <p class="record__regist">Реєстрація</p>

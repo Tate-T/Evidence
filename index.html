@@ -5178,6 +5178,7 @@
       <div class="regis__labels">
         <label class="regis__label">
           <input
+            required
             placeholder="Як до вас звернутись?"
             type="text"
             class="regis__input"
@@ -5185,6 +5186,7 @@
         </label>
         <label class="regis__label">
           <input
+            required
             placeholder="+380(___) ___ -__-__"
             type="tel"
             class="regis__input"
@@ -5192,26 +5194,35 @@
         </label>
       </div>
       <p class="regis__question">Як з вами краще зв’язатися?</p>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="viber" class="regis__radio" />
-        Напишіть мені на Viber
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
-      <label class="regis__choose">
-        <input type="radio" name="contact" value="phone" class="regis__radio" />
-        Подзвоніть мені
-        <div class="regis__fake">
-          <div class="regis__checked"></div>
-        </div>
-      </label>
-      <button
-        type="button"
-        data-thank-open
-        data-regis-submit
-        class="regis__button"
-      >
+      <div class="regis__chooses">
+        <label class="regis__choose">
+          <input
+            required
+            type="radio"
+            name="contact"
+            value="viber"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Напишіть мені на Viber
+        </label>
+        <label class="regis__choose">
+          <input
+            required
+            type="radio"
+            name="contact"
+            value="phone"
+            class="regis__radio"
+          />
+          <div class="regis__fake">
+            <div class="regis__checked"></div>
+          </div>
+          Подзвоніть мені
+        </label>
+      </div>
+      <button type="submit" data-thank-open class="regis__button">
         Відправити
       </button>
     </form>
@@ -5331,6 +5342,7 @@
           <label class="record__label" for="">
             Персональний номер :
             <input
+              required
               placeholder="Ваш персональний номер"
               class="record__input"
               type="text"
@@ -5339,12 +5351,13 @@
           <label class="record__label" for="">
             Пароль :
             <input
+              required
               placeholder="*************"
               class="record__input"
               type="password"
             />
           </label>
-          <button class="record__btn">Вхід</button>
+          <button type="submit" class="record__btn">Вхід</button>
           <div class="record__registes">
             <p class="record__regist">Забув пароль</p>
             <p class="record__regist">Реєстрація</p>
