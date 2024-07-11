@@ -61,6 +61,7 @@
             font-weight: 600;
             line-height: 0.92;
             margin-bottom: 24px;
+            width: 327px;
         }
 
         &__sidebar {
@@ -99,17 +100,17 @@
             display: block;
             padding-top: 40px;
             width: 748px;
-            padding-right: 100px;
+            margin-left: 120px;
         }
 
-        &__list {}
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__item {
+            width: 748px;
             padding: 24px;
-            height: 79px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             border-bottom: 0.711px solid $light-accent-color;
         }
 
@@ -117,14 +118,58 @@
             color: $dark-accent-color;
             font-size: 22.767px;
             font-weight: 600;
+            display: flex;
         }
 
-        &__plus {
-            fill: #0052B4;
+        &__input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
         }
 
-        &__icon {
-            display: none;
+        &__points {
+            max-height: 0;
+            overflow: hidden;
+            width: 700px;
+            padding-left: 36px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item &__input:checked~&__points {
+            max-height: 600px;
+            margin-top: 36px;
+        }
+
+        &__point {
+            display: inline-flex;
+            align-items: center;
+            color: $text-color;
+            font-size: 22.767px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__point::before {
+            content: "";
+            display: block;
+            min-width: 4.5px;
+            min-height: 5px;
+            background-color: $text-color;
+            margin-right: 16px;
+            border-radius: 100px;
+        }
+
+        &__question::after {
+            content: url(../img/desktop/faq/faq-plus.png);
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-left: auto;
+        }
+
+        &__item &__input:checked+&__question::after {
+            content: url(../img/desktop/faq/faq-minus.png);
         }
     }
 }
@@ -148,6 +193,7 @@
         &__title {
             font-size: 48px;
             margin-bottom: 74px;
+            width: 459px;
         }
 
         &__subtitle {
@@ -163,13 +209,15 @@
 
         &__content {
             padding-top: 94px;
-            width: 1053px;
+            width: 1052px;
             padding-right: 94px;
         }
 
+        &__list {}
+
         &__item {
+            width: 1052px;
             padding: 32px;
-            height: 109px;
             border-bottom: 1px solid $light-accent-color;
         }
 
@@ -182,24 +230,18 @@
             height: 22px;
         }
 
-        .faq {
+        &__points {
+            width: 900px;
+        }
 
-            &__list {}
+        &__question::after {
+            content: url(../img/desktop/faq/faq-plus-desktop.png);
+            width: 42px;
+            height: 42px;
+        }
 
-
-            &__question {
-                color: $dark-accent-color;
-                font-size: 22.767px;
-                font-weight: 600;
-            }
-
-            &__plus {
-                fill: #0052B4;
-            }
-
-            &__icon {
-                display: none;
-            }
+        &__item &__input:checked+&__question::after {
+            content: url(../img/desktop/faq/faq-minus-desktop.png);
         }
     }
 }
