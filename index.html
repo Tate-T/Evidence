@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="/Evidence/assets/hero-photo@1x-mobile-1aa8e722.webp"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/Evidence/assets/hero-photo@2x-mobile-b2ce3dfe.webp"
+      as="image"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -140,6 +150,7 @@
           media="(max-width: 1333px)"
         />
         <img
+          fetchpriority="high"
           class="hero__img"
           width="240"
           height="240"
