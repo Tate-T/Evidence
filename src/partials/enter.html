@@ -1,69 +1,129 @@
 <section class="enter">
-  <picture>
-    <source
-      srcset="
-        ./img/desktop/enter/enter-img@1x-desktop.webp 1x,
-        ./img/desktop/enter/enter-img@2x-desktop.webp 2x
-      "
-    />
-    <img
-      class="enter__img"
-      width="240"
-      height="240"
-      src="./img/desktop/enter/enter-img@1x-desktop.webp 1x"
-      alt="Feet"
-    />
-  </picture>
-  <form class="enter__content">
-    <h1 class="enter__title">Вхід в особистий кабінет</h1>
-    <ul class="enter__list">
-      <li class="enter__item">
-        <label class="enter__label">
-          Персональний номер *
-          <input
-            name="enter-number"
-            type="text"
-            class="enter__input"
-            placeholder="EV-0*****"
-            required
-          />
-        </label>
-      </li>
-      <li class="enter__item">
-        <label class="enter__label">
-          Пароль *
-          <input
-            name="enter-password"
-            type="text"
-            class="enter__input"
-            placeholder="*********"
-            required
-          />
-          <svg class="enter__eye" width="20" height="20">
-            <use href="./svg/icons.svg#eye-slash"></use>
-          </svg>
-        </label>
-      </li>
-    </ul>
-    <button type="submit" class="enter__btn"></button>
-    <p class="enter__forget">Забули пароль?</p>
-    <div class="enter__block">
-      <p class="enter__first">Вперше тут?</p>
-      <a href="" class="enter__registration">Зареєеструватися</a>
-    </div>
-    <ul class="enter__medias">
-      <li class="enter__media">
-        <svg class="enter__icon" width="36" height="36">
-          <use href="./svg/icons.svg#modal-google"></use>
-        </svg>
-        <p class="enter__sign">Sign up with Google</p>
-      </li>
-      <li class="enter__media">
-        <svg class="enter__icon" width="36" height="36">
-          <use href="./svg/icons.svg#modal-facebook"></use>
-        </svg>
-        <p class="enter__sign">Sign up with Facebook</p>
-      </li>
-    </ul>
-  </form>
+  <div class="container">
+    <a href="./index.html" class="enter__logo">
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/header/logo@1x-desktop.webp 1x,
+            ./img/desktop/header/logo@2x-desktop.webp 2x
+          "
+          media="(min-width: 1766px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/header/logo@1x-tablet.webp 1x,
+            ./img/tablet/header/logo@2x-tablet.webp 2x
+          "
+          media="(min-width: 1334px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/header/logo@1x-mobile.webp 1x,
+            ./img/mobile/header/logo@2x-mobile.webp 2x
+          "
+          media="(max-width: 1333px)"
+        />
+        <img
+          class="enter__picture"
+          width="186"
+          height="48"
+          src="./img/mobile/header/logo@1x-mobile.webp 1x"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <picture>
+      <source
+        srcset="
+          ./img/desktop/enter/enter-img@1x-desktop.webp 1x,
+          ./img/desktop/enter/enter-img@2x-desktop.webp 2x
+        "
+      />
+      <img
+        class="enter__img"
+        width="240"
+        height="240"
+        src="./img/desktop/enter/enter-img@1x-desktop.webp 1x"
+        alt="Feet"
+      />
+    </picture>
+    <form class="enter__content">
+      <h1 class="enter__title">Вхід в особистий кабінет</h1>
+      <h2 class="enter__subtitle">Особистий кабінет</h2>
+      <ul class="enter__funkshes">
+        <li class="enter__funkshe">
+          <a href="./enter-page.html" class="enter__run enter__run--accent">
+            Вхід
+          </a>
+        </li>
+        <li class="enter__funkshe">
+          <a href="./user-page.html" class="enter__run">Реєстрація</a>
+        </li>
+      </ul>
+      <ul class="enter__list">
+        <li class="enter__item">
+          <label class="enter__label">
+            Персональний номер *
+            <input
+              name="enter-number"
+              type="text"
+              class="enter__input"
+              placeholder="EV-0*****"
+              required
+            />
+          </label>
+        </li>
+        <li class="enter__item">
+          <label class="enter__label">
+            Пароль *
+            <input
+              name="enter-password"
+              type="password"
+              class="enter__input"
+              placeholder="*********"
+              required
+            />
+            <svg class="enter__eye" width="20" height="20">
+              <use href="./svg/icons.svg#eye-slash"></use>
+            </svg>
+          </label>
+        </li>
+      </ul>
+      <button type="submit" class="enter__btn">Вхід</button>
+      <p class="enter__forget">Забули пароль?</p>
+      <div class="enter__block">
+        <p class="enter__first">Вперше тут?</p>
+        <a href="./user-page.html" class="enter__registration"
+          >Зареєеструватися</a
+        >
+      </div>
+      <h4 class="enter__header">Або увійти через соцмережі</h4>
+      <ul class="enter__medias">
+        <li class="enter__media">
+          <a
+            target="_blank"
+            href="https://www.google.com/search?q=google&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQg1NzU5ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8"
+            class="enter__address"
+          >
+            <svg class="enter__icon" width="36" height="36">
+              <use href="./svg/icons.svg#modal-google"></use>
+            </svg>
+            <p class="enter__sign">Sign up with Google</p>
+          </a>
+        </li>
+        <li class="enter__media">
+          <a
+            target="_blank"
+            href="https://sr-rs.facebook.com/"
+            class="enter__address"
+          >
+            <svg class="enter__icon" width="36" height="36">
+              <use href="./svg/icons.svg#modal-facebook"></use>
+            </svg>
+            <p class="enter__sign">Sign up with Facebook</p>
+          </a>
+        </li>
+      </ul>
+    </form>
+  </div>
 </section>
