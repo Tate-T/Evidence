@@ -19,8 +19,9 @@
     
     <title>Evidence</title>
     <script type="module" crossorigin src="/Evidence/commonHelpers3.js"></script>
-    <link rel="modulepreload" crossorigin href="/Evidence/assets/menu-cbcf0b5e.js">
-    <link rel="stylesheet" href="/Evidence/assets/index-b5e0a087.css">
+    <link rel="modulepreload" crossorigin href="/Evidence/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/Evidence/assets/menu-10d38903.js">
+    <link rel="stylesheet" href="/Evidence/assets/index-4ae44b74.css">
   </head>
   <body>
     <header class="header">
@@ -84,8 +85,14 @@
       </svg>
     </div>
     <ul class="header__states">
-      <li class="header__state"><a href="" class="header__run">Пацієнт</a></li>
-      <li class="header__state"><a href="" class="header__run">Лікар</a></li>
+      <li class="header__state">
+        <a target="_blank" href="./enter-page.html" class="header__run">
+          Пацієнт
+        </a>
+      </li>
+      <li target="_blank" class="header__state">
+        <a href="" class="header__run">Лікар</a>
+      </li>
     </ul>
   </div>
 </header>
