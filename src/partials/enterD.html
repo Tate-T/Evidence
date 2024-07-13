@@ -1,0 +1,117 @@
+<section class="enterD">
+  <div class="container">
+    <a href="./index.html" class="enterD__logo">
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/header/logo@1x-desktop.webp 1x,
+            ./img/desktop/header/logo@2x-desktop.webp 2x
+          "
+          media="(min-width: 1766px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/header/logo@1x-tablet.webp 1x,
+            ./img/tablet/header/logo@2x-tablet.webp 2x
+          "
+          media="(min-width: 1334px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/header/logo@1x-mobile.webp 1x,
+            ./img/mobile/header/logo@2x-mobile.webp 2x
+          "
+          media="(max-width: 1333px)"
+        />
+        <img
+          class="enterD__picture"
+          width="186"
+          height="48"
+          src="./img/mobile/header/logo@1x-mobile.webp 1x"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <form class="enterD__content">
+      <h1 class="enterD__title">Вхід в особистий кабінет</h1>
+      <h2 class="enterD__subtitle">Особистий кабінет</h2>
+      <ul class="enterD__funkshes">
+        <li class="enterD__funkshe">
+          <a href="./enterD-page.html" class="enterD__run enterD__run--accent">
+            Вхід
+          </a>
+        </li>
+        <li class="enterD__funkshe">
+          <a href="./regisD-page.html" class="enterD__run">Реєстрація</a>
+        </li>
+      </ul>
+      <ul class="enterD__list">
+        <li class="enterD__item">
+          <label class="enterD__label">
+            Персональний номер лікаря
+            <input
+              name="enterD-number"
+              type="text"
+              class="enterD__input"
+              placeholder="EV-0*****"
+              required
+            />
+          </label>
+        </li>
+        <li class="enterD__item">
+          <label class="enterD__label">
+            Пароль
+            <input
+              name="enterD-password"
+              type="password"
+              class="enterD__input"
+              placeholder="*********"
+              required
+            />
+            <svg class="enterD__eye" width="20" height="20">
+              <use href="./svg/icons.svg#eye-slash"></use>
+            </svg>
+          </label>
+        </li>
+      </ul>
+      <button type="submit" class="enterD__btn">Вхід</button>
+      <p class="enterD__forget">Забули пароль?</p>
+      <div class="enterD__block">
+        <p class="enterD__first"></p>
+        <a href="./regisD-page.html" class="enterD__registration"
+          >Вперше тут?
+          <span class="enterD__registration enterD__registration--accent">
+            Зареєеструватися</span
+          ></a
+        >
+      </div>
+      <h4 class="enterD__header">Увійти через соцмережі</h4>
+      <ul class="enterD__medias">
+        <li class="enterD__media">
+          <a
+            target="_blank"
+            href="https://www.google.com/search?q=google&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQg1NzU5ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8"
+            class="enterD__address"
+          >
+            <svg class="enterD__icon" width="36" height="36">
+              <use href="./svg/icons.svg#modal-google"></use>
+            </svg>
+            <p class="enterD__sign">Sign up with Google</p>
+          </a>
+        </li>
+        <li class="enterD__media">
+          <a
+            target="_blank"
+            href="https://sr-rs.facebook.com/"
+            class="enterD__address"
+          >
+            <svg class="enterD__icon" width="36" height="36">
+              <use href="./svg/icons.svg#modal-facebook"></use>
+            </svg>
+            <p class="enterD__sign">Sign up with Facebook</p>
+          </a>
+        </li>
+      </ul>
+    </form>
+  </div>
+</section>
