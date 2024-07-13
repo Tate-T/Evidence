@@ -254,5 +254,9 @@
         <symbol id="burger-menu" viewBox="0 0 32 32">
             <path stroke-linecap="round" stroke-width="2.667" d="M4 9.333h24.381M4 16.191h24.381M4 23.048h24.381" />
         </symbol>
+        <symbol id="choose-arrow" viewBox="0 0 32 32">
+            <path d="M15.998 19.919l-9.333-9.333-1.414 1.414 10.748 10.747 10.747-10.747-1.414-1.414-9.333 9.333z">
+            </path>
+        </symbol>
     </defs>
 </svg>
