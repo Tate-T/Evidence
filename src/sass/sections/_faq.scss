@@ -44,6 +44,11 @@
     &__content {
         display: none;
     }
+
+    &__icon {
+        width: 153px;
+        height: 150.529px;
+    }
 }
 
 @media screen and (min-width: 1334px) {
@@ -53,6 +58,10 @@
 
         & .container {
             align-items: start;
+        }
+
+        &__icon {
+            display: none;
         }
 
         &__title {
